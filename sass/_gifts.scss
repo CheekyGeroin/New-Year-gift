@@ -1,0 +1,52 @@
+.gifts{
+    background-color: $bgColor;
+    padding: 300px 0;
+    background-image: url(../images/IMG_7707.PNG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    @media screen and(min-width:$desktop){
+        padding-top: 1100px;
+            padding-bottom: 1336px;
+    }
+}
+.gifts__container{
+
+}
+.gifts__list{
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+bottom: 0;
+left: calc(50% - 160px);
+@media screen and (min-width:$desktop){
+    left: calc(50% - 600px);
+}
+
+}
+.gifts__item{
+    &:not(:last-child) {
+            margin-right: 30px;
+        }
+@media screen and (min-width:$desktop){
+    &:not(:last-child) {
+            margin-right: 80px;
+        }
+}
+}
+.gifts__link{
+
+}
+.gifts__icon{
+ fill: $mainTextColor;
+ transition: fill 250ms $cubicBezier;
+ &:hover, &:focus{
+    fill: $linkHoverColor;
+ }
+ @media screen and (max-width:1279px){
+    width: 50px;
+    height: 50px;
+ }
+}
